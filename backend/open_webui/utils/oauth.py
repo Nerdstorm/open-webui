@@ -28,6 +28,7 @@ from open_webui.config import (
     OAUTH_ADMIN_ROLES,
     WEBHOOK_URL,
     JWT_EXPIRES_IN,
+    WEBUI_URL,
     AppConfig,
 )
 from open_webui.constants import ERROR_MESSAGES
@@ -206,7 +207,7 @@ class OAuthManager:
                         )
                         picture_url = ""
                 if not picture_url:
-                    picture_url = "/user.png"
+                    picture_url = WEBUI_URL + "/user.png"
                 username_claim = auth_manager_config.OAUTH_USERNAME_CLAIM
 
                 role = self.get_user_role(None, user_data)

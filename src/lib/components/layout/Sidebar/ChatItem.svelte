@@ -112,7 +112,7 @@
 			if ($chatId === id) {
 				await chatId.set('');
 				await tick();
-				goto('/');
+				goto('/assistant/');
 			}
 
 			dispatch('change');

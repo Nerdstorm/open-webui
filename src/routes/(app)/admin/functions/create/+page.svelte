@@ -49,7 +49,7 @@
 			functions.set(await getFunctions(localStorage.token));
 			models.set(await getModels(localStorage.token));
 
-			await goto('/admin/functions');
+			await goto('/assistant/admin/functions');
 		}
 	};
 

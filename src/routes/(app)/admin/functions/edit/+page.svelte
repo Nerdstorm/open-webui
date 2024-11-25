@@ -59,7 +59,7 @@
 		if (id) {
 			func = await getFunctionById(localStorage.token, id).catch((error) => {
 				toast.error(error);
-				goto('/admin/functions');
+				goto('/assistant/admin/functions');
 				return null;
 			});
 

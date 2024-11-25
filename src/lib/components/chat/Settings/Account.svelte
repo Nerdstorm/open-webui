@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { WEBUI_BASE_URL } from '$lib/constants';
 	import { toast } from 'svelte-sonner';
 	import { onMount, getContext } from 'svelte';
 
@@ -205,7 +206,7 @@
 						<button
 							class=" text-xs text-center text-gray-800 dark:text-gray-400 rounded-lg px-2 py-1"
 							on:click={async () => {
-								profileImageUrl = '/user.png';
+								profileImageUrl = `${WEBUI_BASE_URL}/user.png`;
 							}}>{$i18n.t('Remove')}</button
 						>
 					</div>

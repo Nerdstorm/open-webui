@@ -173,7 +173,7 @@
 
 	onMount(async () => {
 		if ($user?.role !== 'admin') {
-			await goto('/');
+			await goto('/assistant/');
 		}
 
 		if ($settings?.models) {

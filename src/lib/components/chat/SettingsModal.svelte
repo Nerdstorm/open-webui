@@ -574,7 +574,7 @@
 										? ''
 										: ' text-gray-300 dark:text-gray-600 hover:text-gray-700 dark:hover:text-white'}"
 									on:click={async () => {
-										await goto('/admin/settings');
+										await goto('/assistant/admin/settings');
 										show = false;
 									}}
 								>

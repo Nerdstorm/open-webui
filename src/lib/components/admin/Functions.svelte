@@ -98,7 +98,7 @@
 				id: `${_function.id}_clone`,
 				name: `${_function.name} (Clone)`
 			});
-			goto('/admin/functions/create');
+			goto('/assistant/admin/functions/create');
 		}
 	};
 

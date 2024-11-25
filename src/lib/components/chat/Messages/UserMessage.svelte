@@ -89,7 +89,7 @@
 			<ProfileImage
 				src={message.user
 					? ($models.find((m) => m.id === message.user)?.info?.meta?.profile_image_url ??
-						'/user.png')
+						`${WEBUI_BASE_URL}/user.png`)
 					: (user?.profile_image_url ?? '/user.png')}
 				className={'size-8'}
 			/>

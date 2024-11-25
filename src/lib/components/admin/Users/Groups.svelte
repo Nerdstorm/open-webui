@@ -97,7 +97,7 @@
 
 	onMount(async () => {
 		if ($user?.role !== 'admin') {
-			await goto('/');
+			await goto('/assistant/');
 		} else {
 			await setGroups();
 			defaultPermissions = await getUserDefaultPermissions(localStorage.token);

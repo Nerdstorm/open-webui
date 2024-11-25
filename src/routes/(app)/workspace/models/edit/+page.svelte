@@ -23,10 +23,10 @@
 			});
 
 			if (!model) {
-				goto('/workspace/models');
+				goto('/assistant/workspace/models');
 			}
 		} else {
-			goto('/workspace/models');
+			goto('/assistant/workspace/models');
 		}
 	});
 
@@ -36,7 +36,7 @@
 		if (res) {
 			await models.set(await getModels(localStorage.token));
 			toast.success($i18n.t('Model updated successfully'));
-			await goto('/workspace/models');
+			await goto('/assistant/workspace/models');
 		}
 	};
 </script>
